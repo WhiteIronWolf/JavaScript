@@ -1,0 +1,17 @@
+What is a variable:
+
+A variable is like a container in which we can store a value in order to use it over and over again.
+In short it's a container for storing data values.
+
+differences between var, let and const:
+https://dev.to/sarah_chima/var-let-and-const--whats-the-difference-69e
+
+1  var declarations are globally scoped or function scoped while let and const are block scoped.
+
+2  var variables can be updated and re-declared within its scope; let variables can be updated
+   but not re-declared; const variables can neither be updated nor re-declared.
+
+3  They are all hoisted to the top of their scope but while varvariables are initialized with undefined,
+   let and const variables are not initialized.
+
+4  While var and let can be declared without being initialized, const must be initialized during declaration.

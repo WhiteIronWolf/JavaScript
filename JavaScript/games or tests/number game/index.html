@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Number</title>
+  <link rel="stylesheet" href="master.css">
+  <script src="https://kit.fontawesome.com/662de8d7c8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="home">
+    <!-- det her er kun navigations menuen -->
+    <a href="index.html">HOME</a>
+  </div>
+  <div class="text">
+    <!-- det her er kun navigations menuen -->
+    <p>This is a guessing game</p>
+    <h1>Please enter a number</h1>
+  </div>
+  <div class="form">
+    <form>
+      <!-- her kan spilleren indtaste sit nummer og trykke let's go -->
+      <input id="number" type="text" name="number" step="1" maxlength="4" max="1000" placeholder="please enter a number between 1 - 1000..." required />
+      <input id="button" type="button" name="button" value="let's go" onclick="getValue();" /> <!-- Hver gang man klikker let's go udføres function get value() -->
+    </form>
+  </div>
+  <div class="emptySpace">
+    <p>Your answer will be given down below <i class="far fa-arrow-alt-circle-down"></i></p>
+  </div>
+  <div class="round">
+    <!-- her kan man se hvilken runde man er ved  -->
+    <p id="round">Round: 0</p>
+  </div>
+  <div class="answer">
+    <!-- her vil spilleren få sit hint -->
+    <p id="answer"><span class="brackets">[ </span>Your hint to the answer will display here<span class="brackets"> ]</span></p>
+  </div>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.block {
+  width: 250px;
+  height: 250px;
+  background-color: black;
+  transition: margin 0.7s ease-out;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+  float: right;
+  border: solid cyan 5px;
+  background-color: white;
+  margin-right: 250px;
+  font-size: 25px;
+}

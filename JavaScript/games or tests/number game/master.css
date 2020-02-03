@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #fff;
+  background-image: url("clock.jpg");
+  background-size: 1920px 600px;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+#home {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#home a {
+  text-decoration: none;
+  color: white;
+}
+
+#home a:hover {
+  color: rgb(23, 168, 99);
+  transition: 1s;
+}
+
+.text {
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.text h1 {
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.form {
+  padding: 50px 30% 0px 30%;
+}
+
+input[type=text] {
+  width: 100%;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input[type=button] {
+  width: 100%;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+input[type=button]:hover {
+  background-color: rgb(23, 168, 99);
+  transition: 1s;
+}
+
+.emptySpace {
+  width: 100%;
+  background-color: rgb(221, 221, 221);
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: rgb(117, 25, 48);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.answer {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding: 0px;
+  color: grey;
+  font-size: 25px;
+}
+
+.answer p {
+  margin-bottom: 0;
+}
+
+.round {
+  background-color: white;
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.round p {
+  margin: 0;
+  padding: 12px 20px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: black;
+  width: 100%;
+  color: white;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0% {
+    background-color: black;
+  }
+
+  50% {
+    background-color: rgb(117, 25, 48);
+  }
+
+  100% {
+    background-color: black;
+  }
+}
+
+.brackets {
+  animation-name: blink;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: black;
+  }
+
+  50% {
+    color: rgb(117, 25, 48);
+  }
+
+  100% {
+    color: black;
+  }
+}

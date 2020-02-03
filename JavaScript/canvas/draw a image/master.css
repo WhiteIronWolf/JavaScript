@@ -1,0 +1,12 @@
+canvas {
+  border: solid black 3px;
+}
+#pokemon {
+  width: 250px;
+  height: 375px;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
