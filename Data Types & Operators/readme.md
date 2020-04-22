@@ -30,8 +30,8 @@ pokemon[0]; // expected output: P
 pokemon[6]; // expected output: u
 ```
 # Operators
-
-// | JavaScript Arithmetic Operators 
+### JavaScript Arithmetic Operators
+Operator | Description 
 ------- | ------- 
 +   | Addition
 -   | Subtraction
@@ -44,7 +44,9 @@ pokemon[6]; // expected output: u
 
 ---
 
-JavaScript | Assignment | Operators |
+### Javascript Assignment Operators
+
+Operator | Example | Same as |
 ------- | ------- | ------- |
 =    | x = y    |   x = y
 +=   | x += y   | x = x + y
@@ -55,8 +57,8 @@ JavaScript | Assignment | Operators |
 **=  | x **= y  | x = x ** y
 
 ---
-
-// | JavaScript Comparison Operators 
+###  JavaScript Comparison Operators
+Operator | Description 
 ------- | -------
 ==  | equal to
 === | equal value and equal type
@@ -69,9 +71,15 @@ JavaScript | Assignment | Operators |
 ?   | ternary operator
 
 ---
-
-// | JavaScript Logical Operators
+### JavaScript Logical Operators
+Operator | Description 
 ------- | ------- 
-&&  | logical and
-//  | logical or
-!   | logical not
+&&  | and
+&#x7c; &#x7c;  | or
+!   |  not
+
+### JavaScript Type Operators
+Operator | Description 
+------- | -------  
+typeof  |  Returns the type of a variable
+instanceof  |   Returns true if an object is an instance of an object type
