@@ -103,9 +103,29 @@ let username = "Jacob Krag"
 `Welcome back : ${ username }`;
 // expected output :  "Welcome back : Jacob Krag"
 ```
-## Built in Objects | Methods
+## Built in Objects | Methods | Properties
 [MDN link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 ### String
 [Built in String Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 ### Math
 [Built in Math Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+
+### Methods vs properties
+
+```javascript
+Math.pi // To acccess a property
+```
+
+```javascript
+Math.random() // To access a method
+```
+
+```javascript
+let word = "Hello";
+word.length; // To acccess a property
+```
+
+```javascript
+let word = "Hello";
+word.toUpperCase() // To access a method
+```

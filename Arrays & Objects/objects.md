@@ -16,6 +16,19 @@ h2, h4 {
 </style>
 # Objects
 
+### Literal notation
+```javascript
+var hotel = {
+  name: "IBA Hotel",
+  rooms: 50,
+  booked: 30,
+  roomTypes: ["twin","double","suite"],
+  checkRooms: function() {
+    return this.rooms - this.booked;
+  }
+};
+```
+
 ---
 
 ### Constructor notation
@@ -31,15 +44,56 @@ hotel.checkRoom = function() {
   return this.rooms - this.bookedRooms;
 };
 ```
-### Literal notation
+
+---
+
+### How to access object properties
 ```javascript
-var hotel = {
-  name: "IBA Hotel",
-  rooms: 50,
-  booked: 30,
-  roomTypes: ["twin","double","suite"],
-  checkRooms: function() {
-    return this.rooms - this.booked;
+const car = {
+  brand: "Nissan",
+  model: "X-Trail",
+  color: "black",
+  year: 2015,
+  fuel: "Diesel",
+  owner: "Jacob Krag",
+  2020: "2020",
+  "Hello World": "Hello World"
+}
+
+//You can access object properties in two ways:
+car.brand;
+car["brand"];
+
+// Do and do not :  
+car.2020 // error
+car[2020] // nice
+
+car.hello world // error
+car["Hello World"] // nice
+```
+### Nesting
+```javascript
+var city = [
+  {
+    name: "Vejle",
+    population: 50.000
+  },
+  {
+    name: "Kolding",
+    population: 60.000
   }
+]
+city[0].name // Vejle
+city[1].name // Kolding
+```
+### Objects and reference types
+```javascript
+const pallete = {
+  red: "#FF0000",
+  green: "#008B00",
+  blue: "#0000FF"
 };
+
+const pallete2 = pallete;
+pallete2.yellow = " #FFFF00";
 ```
