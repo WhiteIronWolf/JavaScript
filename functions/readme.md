@@ -1,0 +1,111 @@
+<style>
+
+h1, h3 {
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 4px 4px 15px black;
+    /* top | right | bottom | left */
+    padding: 5px 0px 5px 2.5px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #4EDFB0;
+}
+
+</style>
+
+# Functions
+## Basic
+### How to call a function
+```javascript
+function greetWorld() {
+    console.log("Hello World!");
+};
+```
+
+### Arguments
+The ```name``` inside the ```()``` is called a parameter that act like variables.
+```javascript
+function greet(name) {
+    console.log(`Hi, ${name}!`)
+}
+
+greet("Jacob");
+// Hi, Jacob!
+```
+Another example:
+```javascript
+function rollDice() {
+    let roll = Math.floor(Math.random() * 6) + 1;
+    console.log(`Rolled: ${roll}`)
+}
+
+function throwDice(number) {
+    for(let i = 0; i < number; i++) {
+        rollDice()
+    }
+    
+}
+
+trowDice(6);
+```
+---
+## Return
+### This works
+```javascript
+function sum(x, y) { 
+  return x + y; // Return stores the value
+}
+
+const answer = sum(5,5);
+console.log(answer);
+```
+
+### This does NOT work
+```javascript
+function sum(x, y) { 
+  console.log(x + y); // Does not store the value
+}
+
+const answer = sum(5,5);
+console.log(answer);
+```
+
+### Another return Example
+
+```javascript
+function containSugar(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i].toLowerCase() === "sugar") {
+            return true;
+        }
+    };
+    return false;
+};
+
+let cake = ["Butter", "Milk", "Sugar", "Eggs"];
+let milk = ["Water", "Milk" ];
+
+containSugar(cake); // true
+containSugar(milk); // false
+```
+
+### Example of usage from javascript book
+```javascript
+function getSize(width, height, depth) {
+  let area = width * height;
+  let volume = width * height * depth;
+  let sizes = [area, volume];
+  return sizes;
+}
+getSize(3, 2)[0]; // returns 6
+getSize(3, 2, 3)[1]; // returns 18
+```
+---
+## Other ways of writing a function
+```javascript
+let greetWorld = function() {
+    let greetWorld = "Hello World!";
+    return greetWorld;
+};
+```

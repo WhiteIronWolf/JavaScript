@@ -1,5 +1,4 @@
 <style>
-
 h1, h3 {
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 4px 4px 15px black;
@@ -8,38 +7,34 @@ h1, h3 {
     font-weight: bold;
 }
 
-h2, h4 {
-    color: teal;
-    font-weight: bold;
+h2 {
+    color: #4EC9B0;
 }
-
 </style>
+
 # Arrays
+## Arrays basic
 
----
-
-### Arrays basic
-
-#### Empty array:
+### Empty array:
 ```javascript
 let students = [];
 ```
-#### An array of strings:
+### An array of strings:
 ```javascript
 let colors = [ "red", "green", "blue" ];
 ```
-#### An array of numbers:
+### An array of numbers:
 ```javascript
 let lottonumber = [ 5, 10, 15, 60 ];
 ```
-#### A mixed array:
+### A mixed array:
 ```javascript
 let stuff = [ true, "dog", 66, null ];
 ```
 
 ---
 
-### How to access an array
+## How to access an array
 ```javascript
 let colors = [ "red", "green", "blue" ];
 colors[0]; // expected output : "red"
@@ -47,7 +42,7 @@ colors[0]; // expected output : "red"
 
 ---
 
-### Modifying arrays
+## Modifying arrays
 ```javascript
 let colors = [ "red", "green", "blue" ];
 colors[0] = "yellow";
@@ -55,30 +50,30 @@ colors[0] = "yellow";
 
 ---
 
-### Array Methods
+## Array Methods
 [Other Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-#### push (adds item to end)
+### push (adds item to end)
 ```javascript
 let colors = [ "red", "green", "blue" ];
 colors.push("yellow");
 // [ "red", "green", "blue", "yellow" ]
 ```
 
-#### pop (removes item to end)
+### pop (removes item to end)
 ```javascript
 let colors = [ "red", "green", "blue" ];
 colors.pop();
 // [ "red", "green" ]
 ```
 
-#### Unshift (adds item to start)
+### Unshift (adds item to start)
 ```javascript
 let colors = [ "red", "green", "blue" ];
 colors.unshift("yellow");
 // [ "yellow", "red", "green", "blue" ]
 ```
 
-#### Shift (remove item to start)
+### Shift (remove item to start)
 ```javascript
 let colors = [ "red", "green", "blue" ];
 colors.unshift();
@@ -88,7 +83,7 @@ colors.unshift();
 ---
 
 
-### Arrays as an object
+## Arrays as an object
 ```javascript
 var names = ["jacob","christian","mads","casper"]
 
@@ -99,11 +94,11 @@ var names = {
   3:  "casper",
 }
 ```
-## Other Array Methods
+# Other Array Methods
 
 ---
 
-### Concat
+## Concat
 ```javascript
 let array1 = [ "a", "b", "c" ];
 let array2 = [ "d", "e", "f" ];
@@ -115,7 +110,7 @@ let allArrays = array1.concat(array2, array3);
 
 ---
 
-### Includes
+## Includes
 ```javascript
 let array1 = [ "a", "b", "c" ];
 array1.includes("a");
@@ -125,7 +120,7 @@ array1.includes("a");
 
 ---
 
-### Index Of
+## Index Of
 ```javascript
 let array1 = [ "a", "b", "c" ];
 array1.indexOf("c");
@@ -135,7 +130,7 @@ array1.indexOf("c");
 
 ---
 
-### Join
+## Join
 ```javascript
 let word = [ "r", "e", "s", "p", "e", "c", "t" ];
 word.join(".");
@@ -145,7 +140,7 @@ word.join(".");
 
 ---
 
-### Reverse
+## Reverse
 ```javascript
 let numbers = [ 1, 2, 3 ];
 numbers.reverse();
@@ -155,7 +150,7 @@ console.log(numbers) // [ 3, 2, 1 ]
 
 ---
 
-### Slice
+## Slice
 ```javascript
 let numbers = [ 1, 2, 3, 4, 5, 6 ];
 let newNumbers = numbers.slice(0, 3);
@@ -166,8 +161,8 @@ console.log(newNumbers);
 
 ---
 
-### Splice (remove or insert)
-Insert
+## Splice (remove or insert)
+### Insert
 ```javascript
 let gamelist = [ "Mario", "Spyro", "Nier" ];
 gamelist.splice(1, 0, "Uncharted");
@@ -175,7 +170,7 @@ gamelist.splice(1, 0, "Uncharted");
 console.log(gamelist);
 // [ "Mario", "Uncharted", "Spyro", "Nier" ]
 ```
-Remove
+### Remove
 ```javascript
 let gamelist = [ "Mario", "Spyro", "Nier" ];
 gamelist.splice(0, 2);
@@ -186,7 +181,7 @@ console.log(gamelist);
 
 ---
 
-### Sort
+## Sort
 ```javascript
 let people = [ "Jane", "Angela", "Jasmin", "Claire", "Sophie" ];
 
@@ -198,9 +193,9 @@ console.log(people)
 
 ```
 
-## Nested Arrays
+# Nested Arrays
 
-### example
+## example
 
 ```javascript
 let people = [

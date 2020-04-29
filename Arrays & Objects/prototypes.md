@@ -1,6 +1,21 @@
-//////////////////////////////////////////////////////////////////////////////
+<style>
 
-//function constructor
+h1, h3 {
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 4px 4px 15px black;
+    /* top | right | bottom | left */
+    padding: 5px 0px 5px 2.5px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #4EDFB0;
+}
+
+</style>
+# Prototypes
+## function constructor
+```javascript
 function Person() {
    this.lastname = "Jackson";
    this.pet = "Bob";
@@ -18,13 +33,12 @@ Person.prototype.bank = function() {
   return account;
 }
 
-lizzie.bank()// 15000
-
-
-//////////////////////////////////////////////////////////////////////////////
-
-//fun fact
+lizzie.bank() // 15000
+```
+## Fun fact
+```javascript
 Object.prototype.dogAge = function(age) {
   var dogNumber = age * 7;
   return dogNumber;
-}
+};
+```

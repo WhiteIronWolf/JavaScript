@@ -1,5 +1,4 @@
 <style>
-
 h1, h3 {
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 4px 4px 15px black;
@@ -8,14 +7,12 @@ h1, h3 {
     font-weight: bold;
 }
 
-h2, h4 {
-    color: teal;
-    font-weight: bold;
+h2 {
+    color: #4EC9B0;
 }
-
 </style>
-# Objects
 
+# Objects
 ### Literal notation
 ```javascript
 var hotel = {
@@ -71,6 +68,7 @@ car[2020] // nice
 car.hello world // error
 car["Hello World"] // nice
 ```
+---
 ### Nesting
 ```javascript
 var city = [
@@ -86,6 +84,7 @@ var city = [
 city[0].name // Vejle
 city[1].name // Kolding
 ```
+---
 ### Objects and reference types
 ```javascript
 const pallete = {
@@ -96,4 +95,31 @@ const pallete = {
 
 const pallete2 = pallete;
 pallete2.yellow = " #FFFF00";
+```
+---
+## Object Methods & Properties
+[MDN | Object Methods & Properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+### Keys
+```javascript
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false
+};
+
+Object.keys(object1);
+// expected output: Array ["a", "b", "c"]
+```
+
+### Values
+```javascript
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false
+};
+
+Object.values(object1);
+// expected output: Array ["somestring", 42, false]
 ```
