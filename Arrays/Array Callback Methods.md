@@ -1,19 +1,8 @@
-<style>
-h1, h3 {
-    /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 4px 4px 15px black;
-    /* top | right | bottom | left */
-    padding: 5px 0px 5px 2.5px;
-    font-weight: bold;
-}
-
-h2 {
-    color: #4EDFB0;
-}
-</style>
 # Array Callback Methods
+
 ## forEach
-### Example 1
+---
+### `Example 1`
 ```javascript
 const nums = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
 nums.forEach(function(num){
@@ -28,7 +17,8 @@ nums.forEach(function(num){
 // 6
 //...
 ```
-### Example 2
+---
+### `Example 2`
 ```javascript
 const nums = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
 nums.forEach ( function ( num ) {
@@ -43,7 +33,8 @@ nums.forEach ( function ( num ) {
 // 12
 //...
 ```
-### Example 3
+---
+### `Example 3`
 ```javascript
 let books = [
     {
