@@ -1,18 +1,3 @@
-<style>
-
-h1, h3 {
-    /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 4px 4px 15px black;
-    /* top | right | bottom | left */
-    padding: 5px 0px 5px 2.5px;
-    font-weight: bold;
-}
-
-h2 {
-    color: #4EDFB0;
-}
-
-</style>
 # AJAX & JSON
 ```XMLHttpRequest()``` Initialisere at xhr skal intaragere med serveren.
 
@@ -23,6 +8,9 @@ h2 {
 ```request.onload = function()``` onload fires the function when an XMLHttpRequest transaction completes successfully.
 
 ```JSON.parse()``` konvetere string om til et javascript object
+
+---
+
 ### Javascript
 ```javascript
 var request = new XMLHttpRequest();
@@ -38,6 +26,9 @@ request.onload = function() {
   }
 };
 ```
+
+---
+
 ### JSON
 ```json
 [

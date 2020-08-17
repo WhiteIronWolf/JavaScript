@@ -1,23 +1,3 @@
-<style>
-
-h1, h3 {
-    /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 4px 4px 15px black;
-    /* top | right | bottom | left */
-    padding: 5px 0px 5px 2.5px;
-    font-weight: bold;
-}
-
-h2 {
-    color: teal;
-    font-weight: bold;
-}
-
-h4 {
-    font-weight: normal;
-}
-
-</style>
 # Conditional statements:
 In JavaScript we have the following conditional statements:
 
@@ -26,12 +6,17 @@ In JavaScript we have the following conditional statements:
 - Use **else if** to specify a new condition to test, if the first condition is false
 - Use **switch** to specify many alternative blocks of code to be executed
 
+---
+
 ### if
 ```javascript
 if (1 === 1) {
     console.log("It's True!") // expected output : It's True!
 };
 ```
+
+---
+
 ### else
 ```javascript
 let age = 18;
@@ -42,6 +27,9 @@ if (age === 16) {
     console.log("Have a nice evening!");    
 }
 ```
+
+---
+
 ### else if
 ```javascript
 let age = 22;
@@ -56,6 +44,9 @@ if (age >= 16 && age < 18) {
     console.log("Sorry can't let you in!");
 }
 ```
+
+---
+
 ### switch
 ```javascript
 let day = 3;
@@ -85,5 +76,8 @@ switch (day) {
         console.log("Invalid day")
 }
 ```
+
+---
+
 ### Operators Precedence
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence

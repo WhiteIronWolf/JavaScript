@@ -1,20 +1,7 @@
-<style>
-
-h1, h3 {
-    /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 4px 4px 15px black;
-    /* top | right | bottom | left */
-    padding: 5px 0px 5px 2.5px;
-    font-weight: bold;
-}
-
-h2 {
-    color: #4EDFB0;
-}
-
-</style>
-
 # Basics:
+
+---
+
 ## Statements:
 ### What is a statement:
 ```javascript
@@ -22,6 +9,9 @@ var y = prompt("Enter Your Name"); //This is a statement
 var x = "Hello world! " + "And hello "; //This is also statement
 console.log(x + y); //Everything that ends with ; is a statement in javascript
 ```
+
+---
+
 ## JS Where to:
 ### This is how you would write javascript in a html file:
 ```html
@@ -34,6 +24,8 @@ console.log("Hello World");
 ```html
 <script src="js/script.js"></script>
 ```
+
+---
 
 ## Variables:
 A variable is like a container in which we can store a value in order to use it over and over again.

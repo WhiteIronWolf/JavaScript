@@ -1,18 +1,7 @@
-<style>
-h1, h3 {
-    /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 4px 4px 15px black;
-    /* top | right | bottom | left */
-    padding: 5px 0px 5px 2.5px;
-    font-weight: bold;
-}
-
-h2 {
-    color: #4EC9B0;
-}
-</style>
-
 # Objects
+
+---
+
 ### Literal notation
 ```javascript
 var hotel = {

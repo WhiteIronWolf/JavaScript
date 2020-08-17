@@ -1,20 +1,9 @@
-<style>
-
-h1, h3 {
-    /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 4px 4px 15px black;
-    /* top | right | bottom | left */
-    padding: 5px 0px 5px 2.5px;
-    font-weight: bold;
-}
-
-h2 {
-    color: #4EDFB0;
-}
-
-</style>
 # JavaScript
-## Resurser:
+if anybody is reading this, then first of all sorry for my english. Second of all this document and repository will be updated by time.
+
+`Quick note: Some of the text is written in danish and will be translated in the near future.`
+
+## Resources:
 [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ---
@@ -27,8 +16,10 @@ Kommandoer | Forklaring
 clear ( ) | Clears the console
 typeof ( ) | The typeof operator returns a string indicating the type of the unevaluated operand
 
+---
+
 ## EJS 6
-### String Template Literals:
+### Template literals:
 ```javascript
 `Hello what is 1 + 1 | that is ${ 1 + 1 }`;
 // expected output :  "Hello what is 1 + 1 | that is 2"
@@ -39,6 +30,9 @@ let username = "Jacob Krag"
 `Welcome back : ${ username }`;
 // expected output :  "Welcome back : Jacob Krag"
 ```
+
+---
+
 ## Built in Objects | Methods | Properties
 [MDN link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 ### String
