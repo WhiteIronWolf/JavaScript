@@ -1,6 +1,6 @@
 # if statements
 
-## `if`
+### `if`
 ```javascript
 if (1 === 1) {
     console.log("It's True!") // expected output : It's True!
@@ -9,7 +9,7 @@ if (1 === 1) {
 
 ---
 
-### else
+### `else`
 ```javascript
 let age = 18;
 
@@ -22,7 +22,7 @@ if (age === 16) {
 
 ---
 
-### else if
+### `else if`
 ```javascript
 let age = 22;
 
