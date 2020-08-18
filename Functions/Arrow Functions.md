@@ -1,12 +1,16 @@
-# Arrow Functions
+# Arrow function expressions
 [W3schools for more info or help](https://www.w3schools.com/Js/js_arrow_function.asp)
+
+Arrow functions were introduced in ES6.
+
+Arrow functions allow us to write shorter function syntax:
 ```javascript
-// Old
+// Function expression
 const greet = function(name) {
     return `Hello, ${name}`;
 };
 
-// New
+// Arrow Function
 const greet = (name) => {
     return `Hello, ${name}`;
 };
@@ -16,25 +20,29 @@ greet("Jacob") // Hello, Jacob
 
 ---
 
-
+## Arrow Functions with One Parameter
 #### Shortens ```(name)``` to ```name```
 ```javascript
-const greet = name => { // this works
+// this works
+const greet = name => {
     return `Hello, ${name}`;
 };
 
 greet("Jacob") // Hello, Jacob
 ```
+JavaScript does not allow you to remove the parentheses from arrow functions with no or multiple parameters; only functions with a single parameter. `this does not work:`
 ```javascript
-const greet = name,age => { // this does not work
-    return `Hello, ${name}`;
+const getArea = x, y => {
+    return x * y;
 };
+
+getArea(5, 10); // Uncaught SyntaxError: 
 ```
 
 ---
 
 
-### Arrow Functions Implicit Returns
+## Arrow Functions Implicit Returns
 No need for ```return``` or ```;```
 ```javascript
 const double = n => (
@@ -45,8 +53,9 @@ const double = n => (
 ---
 
 
-#### One line Arrow Functions
-No need for ```()```
+## Arrow Functions as One-line Statements
+No need for `()`, `{}` or `return`
 ```javascript
 const double = n => n + n;
 ```
+---

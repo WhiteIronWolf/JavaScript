@@ -1,6 +1,7 @@
 # While loops
+A loop only runs if the condition is true.
 
-
+Is i less or equal to 5? if true then run the loop until i is equal to 5.
 ### `While loops basic`
 ```javascript
 let i = 0;

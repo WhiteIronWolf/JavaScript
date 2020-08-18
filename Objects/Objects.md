@@ -58,6 +58,19 @@ car.hello world // error
 car["Hello World"] // nice
 ```
 ---
+
+### Set the Value of Object Properties
+```javascript
+const car = {
+  brand: "Nissan",
+  model: "X-Trail"
+}
+
+car.model = "Juke";
+console.log(car.model) // Juke
+
+```
+---
 ### Nesting
 ```javascript
 var city = [

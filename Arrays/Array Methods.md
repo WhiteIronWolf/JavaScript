@@ -2,28 +2,28 @@
 [Other Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ---
-### push (adds item to end)
+### push (adds item to the end)
 ```javascript
 let colors = [ "red", "green", "blue" ];
 colors.push("yellow");
 // [ "red", "green", "blue", "yellow" ]
 ```
 ---
-### pop (removes item to end)
+### pop (removes item from the end)
 ```javascript
 let colors = [ "red", "green", "blue" ];
 colors.pop();
 // [ "red", "green" ]
 ```
 ---
-### Unshift (adds item to start)
+### Unshift (adds item to the start)
 ```javascript
 let colors = [ "red", "green", "blue" ];
 colors.unshift("yellow");
 // [ "yellow", "red", "green", "blue" ]
 ```
 ---
-### Shift (remove item to start)
+### Shift (remove item from the start)
 ```javascript
 let colors = [ "red", "green", "blue" ];
 colors.unshift();
