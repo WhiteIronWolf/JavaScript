@@ -2,14 +2,14 @@
 [Other Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ---
-### push (adds item to the end)
+### Push (adds item to the end)
 ```javascript
 let colors = [ "red", "green", "blue" ];
 colors.push("yellow");
 // [ "red", "green", "blue", "yellow" ]
 ```
 ---
-### pop (removes item from the end)
+### Pop (removes item from the end)
 ```javascript
 let colors = [ "red", "green", "blue" ];
 colors.pop();
@@ -26,8 +26,17 @@ colors.unshift("yellow");
 ### Shift (remove item from the start)
 ```javascript
 let colors = [ "red", "green", "blue" ];
-colors.unshift();
+colors.shift();
 // [ "green", "blue" ]
+```
+---
+
+Pop and Shift also returns the removed item, which means you can do this:
+```javascript
+let retrieve = [];
+let colors = [ "red", "green", "blue" ];
+
+retrieve[0] = colors.pop();
 ```
 
 ---
@@ -46,6 +55,7 @@ let allArrays = array1.concat(array2, array3);
 ---
 
 ### Includes
+Does the array include`('item')`. The outcome is either `true` or `false`.
 ```javascript
 let array1 = [ "a", "b", "c" ];
 array1.includes("a");
@@ -56,6 +66,7 @@ array1.includes("a");
 ---
 
 ### Index Of
+The `indexOf()` method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 ```javascript
 let array1 = [ "a", "b", "c" ];
 array1.indexOf("c");
@@ -66,6 +77,9 @@ array1.indexOf("c");
 ---
 
 ### Join
+The `array.join()` method is used to join the elements of an array into a string.
+
+The default parameter value for `join()` is a comma `(,)`
 ```javascript
 let word = [ "r", "e", "s", "p", "e", "c", "t" ];
 word.join(".");
