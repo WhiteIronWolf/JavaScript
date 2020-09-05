@@ -1,28 +1,29 @@
 # Return
+The return statement ends function execution and specifies a value to be returned to the function caller. Example below:
 
-### This works
+### **This works**
 ```javascript
 function sum(x, y) { 
   return x + y; // Return stores the value
 }
 
 const answer = sum(5,5);
-console.log(answer);
+console.log(answer); // 10
 ```
 
-### This does NOT work
+### **This does NOT work**
 ```javascript
 function sum(x, y) { 
   console.log(x + y); // Does not store the value
 }
 
 const answer = sum(5,5);
-console.log(answer);
+console.log(answer); // Undefined
 ```
 
 ---
-
-### Another return Example
+## **Examples**
+### Example 1
 
 ```javascript
 function containSugar(arr) {
@@ -43,7 +44,7 @@ containSugar(milk); // false
 
 ---
 
-### Example of usage from my old JavaScript book
+### Example 2
 ```javascript
 function getSize(width, height, depth) {
   let area = width * height;
