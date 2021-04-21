@@ -41,7 +41,7 @@ retrieve[0] = colors.pop();
 
 ---
 
-# Other Array Methods
+## `Other Array Methods`
 ### Concat
 ```javascript
 let array1 = [ "a", "b", "c" ];
